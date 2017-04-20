@@ -7,13 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18E31B3062E9FA8F370FFE2D /* Pods_FashionWardrobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041ED4D8C2B5D820D89A558C /* Pods_FashionWardrobe.framework */; };
+		4033FE099DA1104EBD63BEFD /* Pods_FashionWardrobeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0D3AF98DBDA1E6F418541F /* Pods_FashionWardrobeUITests.framework */; };
+		432843F71E9EA34600DBBB95 /* ItemsDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432843F51E9EA34600DBBB95 /* ItemsDateTableViewCell.swift */; };
+		432843F81E9EA34600DBBB95 /* ItemsDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 432843F61E9EA34600DBBB95 /* ItemsDateTableViewCell.xib */; };
+		432843FB1E9EA4DD00DBBB95 /* ItemPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432843F91E9EA4DD00DBBB95 /* ItemPhotoTableViewCell.swift */; };
+		432843FC1E9EA4DD00DBBB95 /* ItemPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 432843FA1E9EA4DD00DBBB95 /* ItemPhotoTableViewCell.xib */; };
+		432843FF1E9EB38200DBBB95 /* ItemsPhotoCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432843FD1E9EB38200DBBB95 /* ItemsPhotoCollectionTableViewCell.swift */; };
+		432844001E9EB38200DBBB95 /* ItemsPhotoCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 432843FE1E9EB38200DBBB95 /* ItemsPhotoCollectionTableViewCell.xib */; };
+		432844021E9FE75900DBBB95 /* ItemsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432844011E9FE75900DBBB95 /* ItemsStorage.swift */; };
+		432844041EA0036A00DBBB95 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432844031EA0036A00DBBB95 /* Item.swift */; };
+		432844161EA52D6D00DBBB95 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432844151EA52D6D00DBBB95 /* Presenter.swift */; };
+		432844181EA52DAD00DBBB95 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432844171EA52DAD00DBBB95 /* View.swift */; };
+		4328441A1EA52E0700DBBB95 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432844191EA52E0700DBBB95 /* DependencyInjector.swift */; };
+		4328441D1EA52E7000DBBB95 /* ItemsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328441C1EA52E7000DBBB95 /* ItemsListPresenter.swift */; };
+		4328441F1EA5452D00DBBB95 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328441E1EA5452D00DBBB95 /* ProfileHeader.swift */; };
+		437E083E1EA67AC200134F2F /* ProfileItemPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E083D1EA67AC200134F2F /* ProfileItemPicture.swift */; };
+		437E08401EA67B0A00134F2F /* ProfileItemsPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E083F1EA67B0A00134F2F /* ProfileItemsPictures.swift */; };
+		437E08421EA67BB800134F2F /* ItemsListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E08411EA67BB800134F2F /* ItemsListType.swift */; };
+		437E08501EA7CA6C00134F2F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E084F1EA7CA6C00134F2F /* ProfileViewController.swift */; };
+		437E08541EA7CAD600134F2F /* ProfileHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E08521EA7CAD600134F2F /* ProfileHeaderTableViewCell.swift */; };
+		437E08551EA7CAD600134F2F /* ProfileHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437E08531EA7CAD600134F2F /* ProfileHeaderTableViewCell.xib */; };
+		437E08591EA7D15A00134F2F /* ProfileWallPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E08571EA7D15A00134F2F /* ProfileWallPicture.swift */; };
+		437E085A1EA7D15A00134F2F /* ProfileWallPicture.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437E08581EA7D15A00134F2F /* ProfileWallPicture.xib */; };
+		437E085D1EA7D7B400134F2F /* ProfileWallPictureCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E085B1EA7D7B400134F2F /* ProfileWallPictureCollection.swift */; };
+		437E085E1EA7D7B400134F2F /* ProfileWallPictureCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437E085C1EA7D7B400134F2F /* ProfileWallPictureCollection.xib */; };
 		43E351561E9D3F8500CABBCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E351551E9D3F8500CABBCD /* AppDelegate.swift */; };
-		43E351581E9D3F8500CABBCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E351571E9D3F8500CABBCD /* ViewController.swift */; };
+		43E351581E9D3F8500CABBCD /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E351571E9D3F8500CABBCD /* ItemsListViewController.swift */; };
 		43E3515B1E9D3F8500CABBCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E351591E9D3F8500CABBCD /* Main.storyboard */; };
 		43E3515D1E9D3F8500CABBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E3515C1E9D3F8500CABBCD /* Assets.xcassets */; };
 		43E351601E9D3F8500CABBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E3515E1E9D3F8500CABBCD /* LaunchScreen.storyboard */; };
 		43E3516B1E9D3F8500CABBCD /* FashionWardrobeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E3516A1E9D3F8500CABBCD /* FashionWardrobeTests.swift */; };
 		43E351761E9D3F8500CABBCD /* FashionWardrobeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E351751E9D3F8500CABBCD /* FashionWardrobeUITests.swift */; };
+		43ED28AE1E9D444B00780B73 /* ItemsListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED28AD1E9D444B00780B73 /* ItemsListHeader.swift */; };
+		43ED28B01E9D447800780B73 /* ItemsListText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED28AF1E9D447800780B73 /* ItemsListText.swift */; };
+		43ED28B21E9D463100780B73 /* ItemsPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED28B11E9D463100780B73 /* ItemsPrice.swift */; };
+		43ED28B41E9D465000780B73 /* ItemsDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED28B31E9D465000780B73 /* ItemsDate.swift */; };
+		43ED28B61E9D467500780B73 /* ItemsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED28B51E9D467500780B73 /* ItemsType.swift */; };
+		43ED28B81E9D46C800780B73 /* ItemsPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED28B71E9D46C800780B73 /* ItemsPicture.swift */; };
+		43ED28BA1E9D46DA00780B73 /* ItemsPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED28B91E9D46DA00780B73 /* ItemsPictures.swift */; };
+		43ED28BD1E9D4E2200780B73 /* ListHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED28BB1E9D4E2200780B73 /* ListHeaderTableViewCell.swift */; };
+		43ED28BE1E9D4E2200780B73 /* ListHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43ED28BC1E9D4E2200780B73 /* ListHeaderTableViewCell.xib */; };
+		43ED28C11E9D573500780B73 /* ItemsTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED28BF1E9D573500780B73 /* ItemsTextTableViewCell.swift */; };
+		43ED28C51E9D5A7B00780B73 /* ItemsTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED28C31E9D5A7B00780B73 /* ItemsTypeTableViewCell.swift */; };
+		43ED28C61E9D5A7B00780B73 /* ItemsTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43ED28C41E9D5A7B00780B73 /* ItemsTypeTableViewCell.xib */; };
+		43ED28CA1E9D5BC900780B73 /* ItemsTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43ED28C81E9D5BC900780B73 /* ItemsTextTableViewCell.xib */; };
+		43ED28CD1E9D5EA300780B73 /* ItemsPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED28CB1E9D5EA300780B73 /* ItemsPriceTableViewCell.swift */; };
+		43ED28CE1E9D5EA300780B73 /* ItemsPriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43ED28CC1E9D5EA300780B73 /* ItemsPriceTableViewCell.xib */; };
+		C73B4D0C7BEF5E2D1958A87D /* Pods_FashionWardrobeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6579F1DEA21275C546AF2E /* Pods_FashionWardrobeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +75,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041ED4D8C2B5D820D89A558C /* Pods_FashionWardrobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionWardrobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D8565EE040F1DA2E8D44BCA /* Pods-FashionWardrobeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionWardrobeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FashionWardrobeUITests/Pods-FashionWardrobeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FB27A33D15ECB4719E22351 /* Pods-FashionWardrobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionWardrobe.release.xcconfig"; path = "Pods/Target Support Files/Pods-FashionWardrobe/Pods-FashionWardrobe.release.xcconfig"; sourceTree = "<group>"; };
+		432843F51E9EA34600DBBB95 /* ItemsDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsDateTableViewCell.swift; sourceTree = "<group>"; };
+		432843F61E9EA34600DBBB95 /* ItemsDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsDateTableViewCell.xib; sourceTree = "<group>"; };
+		432843F91E9EA4DD00DBBB95 /* ItemPhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPhotoTableViewCell.swift; sourceTree = "<group>"; };
+		432843FA1E9EA4DD00DBBB95 /* ItemPhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemPhotoTableViewCell.xib; sourceTree = "<group>"; };
+		432843FD1E9EB38200DBBB95 /* ItemsPhotoCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsPhotoCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		432843FE1E9EB38200DBBB95 /* ItemsPhotoCollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsPhotoCollectionTableViewCell.xib; sourceTree = "<group>"; };
+		432844011E9FE75900DBBB95 /* ItemsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsStorage.swift; sourceTree = "<group>"; };
+		432844031EA0036A00DBBB95 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		432844151EA52D6D00DBBB95 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		432844171EA52DAD00DBBB95 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		432844191EA52E0700DBBB95 /* DependencyInjector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
+		4328441C1EA52E7000DBBB95 /* ItemsListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsListPresenter.swift; sourceTree = "<group>"; };
+		4328441E1EA5452D00DBBB95 /* ProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		437E083D1EA67AC200134F2F /* ProfileItemPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileItemPicture.swift; sourceTree = "<group>"; };
+		437E083F1EA67B0A00134F2F /* ProfileItemsPictures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileItemsPictures.swift; sourceTree = "<group>"; };
+		437E08411EA67BB800134F2F /* ItemsListType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsListType.swift; sourceTree = "<group>"; };
+		437E084F1EA7CA6C00134F2F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		437E08521EA7CAD600134F2F /* ProfileHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		437E08531EA7CAD600134F2F /* ProfileHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		437E08571EA7D15A00134F2F /* ProfileWallPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileWallPicture.swift; sourceTree = "<group>"; };
+		437E08581EA7D15A00134F2F /* ProfileWallPicture.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileWallPicture.xib; sourceTree = "<group>"; };
+		437E085B1EA7D7B400134F2F /* ProfileWallPictureCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileWallPictureCollection.swift; sourceTree = "<group>"; };
+		437E085C1EA7D7B400134F2F /* ProfileWallPictureCollection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileWallPictureCollection.xib; sourceTree = "<group>"; };
 		43E351521E9D3F8500CABBCD /* FashionWardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionWardrobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E351551E9D3F8500CABBCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43E351571E9D3F8500CABBCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43E351571E9D3F8500CABBCD /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
 		43E3515A1E9D3F8500CABBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43E3515C1E9D3F8500CABBCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E3515F1E9D3F8500CABBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +114,27 @@
 		43E351711E9D3F8500CABBCD /* FashionWardrobeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FashionWardrobeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E351751E9D3F8500CABBCD /* FashionWardrobeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionWardrobeUITests.swift; sourceTree = "<group>"; };
 		43E351771E9D3F8500CABBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43ED28AD1E9D444B00780B73 /* ItemsListHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsListHeader.swift; sourceTree = "<group>"; };
+		43ED28AF1E9D447800780B73 /* ItemsListText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsListText.swift; sourceTree = "<group>"; };
+		43ED28B11E9D463100780B73 /* ItemsPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsPrice.swift; sourceTree = "<group>"; };
+		43ED28B31E9D465000780B73 /* ItemsDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsDate.swift; sourceTree = "<group>"; };
+		43ED28B51E9D467500780B73 /* ItemsType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsType.swift; sourceTree = "<group>"; };
+		43ED28B71E9D46C800780B73 /* ItemsPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsPicture.swift; sourceTree = "<group>"; };
+		43ED28B91E9D46DA00780B73 /* ItemsPictures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsPictures.swift; sourceTree = "<group>"; };
+		43ED28BB1E9D4E2200780B73 /* ListHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		43ED28BC1E9D4E2200780B73 /* ListHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		43ED28BF1E9D573500780B73 /* ItemsTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTextTableViewCell.swift; sourceTree = "<group>"; };
+		43ED28C31E9D5A7B00780B73 /* ItemsTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTypeTableViewCell.swift; sourceTree = "<group>"; };
+		43ED28C41E9D5A7B00780B73 /* ItemsTypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsTypeTableViewCell.xib; sourceTree = "<group>"; };
+		43ED28C81E9D5BC900780B73 /* ItemsTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsTextTableViewCell.xib; sourceTree = "<group>"; };
+		43ED28CB1E9D5EA300780B73 /* ItemsPriceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsPriceTableViewCell.swift; sourceTree = "<group>"; };
+		43ED28CC1E9D5EA300780B73 /* ItemsPriceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsPriceTableViewCell.xib; sourceTree = "<group>"; };
+		4D0D3AF98DBDA1E6F418541F /* Pods_FashionWardrobeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionWardrobeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E984B5BE4928F4C123C6FE6 /* Pods-FashionWardrobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionWardrobe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FashionWardrobe/Pods-FashionWardrobe.debug.xcconfig"; sourceTree = "<group>"; };
+		AA6579F1DEA21275C546AF2E /* Pods_FashionWardrobeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionWardrobeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C743D2A3D46B2417CF4F93FA /* Pods-FashionWardrobeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionWardrobeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FashionWardrobeTests/Pods-FashionWardrobeTests.release.xcconfig"; sourceTree = "<group>"; };
+		D65CE86CF802DBBCDFEAA3AF /* Pods-FashionWardrobeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionWardrobeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FashionWardrobeUITests/Pods-FashionWardrobeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DA6430F3444F4425AC5B7D7F /* Pods-FashionWardrobeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionWardrobeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FashionWardrobeTests/Pods-FashionWardrobeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E31B3062E9FA8F370FFE2D /* Pods_FashionWardrobe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73B4D0C7BEF5E2D1958A87D /* Pods_FashionWardrobeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +158,83 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4033FE099DA1104EBD63BEFD /* Pods_FashionWardrobeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		428E03C1A99029BA9C528D73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				041ED4D8C2B5D820D89A558C /* Pods_FashionWardrobe.framework */,
+				AA6579F1DEA21275C546AF2E /* Pods_FashionWardrobeTests.framework */,
+				4D0D3AF98DBDA1E6F418541F /* Pods_FashionWardrobeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		432844121EA52D2A00DBBB95 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				437E08521EA7CAD600134F2F /* ProfileHeaderTableViewCell.swift */,
+				437E08531EA7CAD600134F2F /* ProfileHeaderTableViewCell.xib */,
+				437E08571EA7D15A00134F2F /* ProfileWallPicture.swift */,
+				437E08581EA7D15A00134F2F /* ProfileWallPicture.xib */,
+				437E085B1EA7D7B400134F2F /* ProfileWallPictureCollection.swift */,
+				437E085C1EA7D7B400134F2F /* ProfileWallPictureCollection.xib */,
+			);
+			name = profile;
+			sourceTree = "<group>";
+		};
+		432844131EA52D3A00DBBB95 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				4328441E1EA5452D00DBBB95 /* ProfileHeader.swift */,
+				437E083D1EA67AC200134F2F /* ProfileItemPicture.swift */,
+				437E083F1EA67B0A00134F2F /* ProfileItemsPictures.swift */,
+			);
+			name = profile;
+			sourceTree = "<group>";
+		};
+		432844141EA52D4F00DBBB95 /* protocols and DI */ = {
+			isa = PBXGroup;
+			children = (
+				432844151EA52D6D00DBBB95 /* Presenter.swift */,
+				432844171EA52DAD00DBBB95 /* View.swift */,
+				432844191EA52E0700DBBB95 /* DependencyInjector.swift */,
+			);
+			name = "protocols and DI";
+			sourceTree = "<group>";
+		};
+		4328441B1EA52E5500DBBB95 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				4328441C1EA52E7000DBBB95 /* ItemsListPresenter.swift */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		43DF838D1EA93AC8009B798E /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ProfileVC;
+			sourceTree = "<group>";
+		};
 		43E351491E9D3F8500CABBCD = {
 			isa = PBXGroup;
 			children = (
 				43E351541E9D3F8500CABBCD /* FashionWardrobe */,
+				43ED28A71E9D438D00780B73 /* custom views */,
+				43ED28A91E9D43DE00780B73 /* internet */,
+				43ED28AB1E9D440400780B73 /* models */,
 				43E351691E9D3F8500CABBCD /* FashionWardrobeTests */,
 				43E351741E9D3F8500CABBCD /* FashionWardrobeUITests */,
 				43E351531E9D3F8500CABBCD /* Products */,
+				5E4D22C83C4684231CE2F630 /* Pods */,
+				428E03C1A99029BA9C528D73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +251,11 @@
 		43E351541E9D3F8500CABBCD /* FashionWardrobe */ = {
 			isa = PBXGroup;
 			children = (
-				43E351551E9D3F8500CABBCD /* AppDelegate.swift */,
-				43E351571E9D3F8500CABBCD /* ViewController.swift */,
-				43E351591E9D3F8500CABBCD /* Main.storyboard */,
-				43E3515C1E9D3F8500CABBCD /* Assets.xcassets */,
-				43E3515E1E9D3F8500CABBCD /* LaunchScreen.storyboard */,
-				43E351611E9D3F8500CABBCD /* Info.plist */,
+				432844011E9FE75900DBBB95 /* ItemsStorage.swift */,
+				432844141EA52D4F00DBBB95 /* protocols and DI */,
+				4328441B1EA52E5500DBBB95 /* Presenters */,
+				43ED28A61E9D428900780B73 /* controllers */,
+				43ED28A51E9D412B00780B73 /* system */,
 			);
 			path = FashionWardrobe;
 			sourceTree = "<group>";
@@ -125,6 +278,106 @@
 			path = FashionWardrobeUITests;
 			sourceTree = "<group>";
 		};
+		43ED28A51E9D412B00780B73 /* system */ = {
+			isa = PBXGroup;
+			children = (
+				43E351611E9D3F8500CABBCD /* Info.plist */,
+				43E3515E1E9D3F8500CABBCD /* LaunchScreen.storyboard */,
+				43E3515C1E9D3F8500CABBCD /* Assets.xcassets */,
+				43E351551E9D3F8500CABBCD /* AppDelegate.swift */,
+				43E351591E9D3F8500CABBCD /* Main.storyboard */,
+			);
+			name = system;
+			sourceTree = "<group>";
+		};
+		43ED28A61E9D428900780B73 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				43E351571E9D3F8500CABBCD /* ItemsListViewController.swift */,
+				437E084F1EA7CA6C00134F2F /* ProfileViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		43ED28A71E9D438D00780B73 /* custom views */ = {
+			isa = PBXGroup;
+			children = (
+				43DF838D1EA93AC8009B798E /* ProfileVC */,
+				432844121EA52D2A00DBBB95 /* profile */,
+				43ED28A81E9D43AF00780B73 /* itemsList */,
+			);
+			name = "custom views";
+			path = FashionWardrobe;
+			sourceTree = "<group>";
+		};
+		43ED28A81E9D43AF00780B73 /* itemsList */ = {
+			isa = PBXGroup;
+			children = (
+				43ED28BB1E9D4E2200780B73 /* ListHeaderTableViewCell.swift */,
+				43ED28BC1E9D4E2200780B73 /* ListHeaderTableViewCell.xib */,
+				43ED28BF1E9D573500780B73 /* ItemsTextTableViewCell.swift */,
+				43ED28C81E9D5BC900780B73 /* ItemsTextTableViewCell.xib */,
+				43ED28C31E9D5A7B00780B73 /* ItemsTypeTableViewCell.swift */,
+				43ED28C41E9D5A7B00780B73 /* ItemsTypeTableViewCell.xib */,
+				43ED28CB1E9D5EA300780B73 /* ItemsPriceTableViewCell.swift */,
+				43ED28CC1E9D5EA300780B73 /* ItemsPriceTableViewCell.xib */,
+				432843F51E9EA34600DBBB95 /* ItemsDateTableViewCell.swift */,
+				432843F61E9EA34600DBBB95 /* ItemsDateTableViewCell.xib */,
+				432843F91E9EA4DD00DBBB95 /* ItemPhotoTableViewCell.swift */,
+				432843FA1E9EA4DD00DBBB95 /* ItemPhotoTableViewCell.xib */,
+				432843FD1E9EB38200DBBB95 /* ItemsPhotoCollectionTableViewCell.swift */,
+				432843FE1E9EB38200DBBB95 /* ItemsPhotoCollectionTableViewCell.xib */,
+			);
+			name = itemsList;
+			sourceTree = "<group>";
+		};
+		43ED28A91E9D43DE00780B73 /* internet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = internet;
+			path = FashionWardrobe;
+			sourceTree = "<group>";
+		};
+		43ED28AB1E9D440400780B73 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				432844131EA52D3A00DBBB95 /* profile */,
+				43ED28AC1E9D441800780B73 /* itemsListModels */,
+			);
+			name = models;
+			path = FashionWardrobe;
+			sourceTree = "<group>";
+		};
+		43ED28AC1E9D441800780B73 /* itemsListModels */ = {
+			isa = PBXGroup;
+			children = (
+				43ED28AD1E9D444B00780B73 /* ItemsListHeader.swift */,
+				43ED28AF1E9D447800780B73 /* ItemsListText.swift */,
+				43ED28B11E9D463100780B73 /* ItemsPrice.swift */,
+				437E08411EA67BB800134F2F /* ItemsListType.swift */,
+				43ED28B31E9D465000780B73 /* ItemsDate.swift */,
+				43ED28B51E9D467500780B73 /* ItemsType.swift */,
+				43ED28B71E9D46C800780B73 /* ItemsPicture.swift */,
+				43ED28B91E9D46DA00780B73 /* ItemsPictures.swift */,
+				432844031EA0036A00DBBB95 /* Item.swift */,
+			);
+			name = itemsListModels;
+			sourceTree = "<group>";
+		};
+		5E4D22C83C4684231CE2F630 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E984B5BE4928F4C123C6FE6 /* Pods-FashionWardrobe.debug.xcconfig */,
+				2FB27A33D15ECB4719E22351 /* Pods-FashionWardrobe.release.xcconfig */,
+				DA6430F3444F4425AC5B7D7F /* Pods-FashionWardrobeTests.debug.xcconfig */,
+				C743D2A3D46B2417CF4F93FA /* Pods-FashionWardrobeTests.release.xcconfig */,
+				1D8565EE040F1DA2E8D44BCA /* Pods-FashionWardrobeUITests.debug.xcconfig */,
+				D65CE86CF802DBBCDFEAA3AF /* Pods-FashionWardrobeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +385,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43E3517A1E9D3F8500CABBCD /* Build configuration list for PBXNativeTarget "FashionWardrobe" */;
 			buildPhases = (
+				FBD75D6F753B95F375AC5FA8 /* [CP] Check Pods Manifest.lock */,
 				43E3514E1E9D3F8500CABBCD /* Sources */,
 				43E3514F1E9D3F8500CABBCD /* Frameworks */,
 				43E351501E9D3F8500CABBCD /* Resources */,
+				92FE95E6EDA26386D83CF826 /* [CP] Embed Pods Frameworks */,
+				C3FB5C01BBC08547ECCA0FE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +405,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43E3517D1E9D3F8500CABBCD /* Build configuration list for PBXNativeTarget "FashionWardrobeTests" */;
 			buildPhases = (
+				F9132ED4070F2405DD944B59 /* [CP] Check Pods Manifest.lock */,
 				43E351621E9D3F8500CABBCD /* Sources */,
 				43E351631E9D3F8500CABBCD /* Frameworks */,
 				43E351641E9D3F8500CABBCD /* Resources */,
+				39687D4566F265B0B6FB8F20 /* [CP] Embed Pods Frameworks */,
+				2448BDEAAC0357D394B012F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +426,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43E351801E9D3F8500CABBCD /* Build configuration list for PBXNativeTarget "FashionWardrobeUITests" */;
 			buildPhases = (
+				B4F3DBF3D78C93A820560E6B /* [CP] Check Pods Manifest.lock */,
 				43E3516D1E9D3F8500CABBCD /* Sources */,
 				43E3516E1E9D3F8500CABBCD /* Frameworks */,
 				43E3516F1E9D3F8500CABBCD /* Resources */,
+				C574C9CE3B5394256DE04E46 /* [CP] Embed Pods Frameworks */,
+				5C3D3900EC9EA6D19595F829 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +455,7 @@
 				TargetAttributes = {
 					43E351511E9D3F8500CABBCD = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 59CT5SJ7RL;
 						ProvisioningStyle = Automatic;
 					};
 					43E351651E9D3F8500CABBCD = {
@@ -232,8 +495,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43ED28BE1E9D4E2200780B73 /* ListHeaderTableViewCell.xib in Resources */,
+				43ED28CA1E9D5BC900780B73 /* ItemsTextTableViewCell.xib in Resources */,
 				43E351601E9D3F8500CABBCD /* LaunchScreen.storyboard in Resources */,
+				432844001E9EB38200DBBB95 /* ItemsPhotoCollectionTableViewCell.xib in Resources */,
+				437E085A1EA7D15A00134F2F /* ProfileWallPicture.xib in Resources */,
 				43E3515D1E9D3F8500CABBCD /* Assets.xcassets in Resources */,
+				43ED28C61E9D5A7B00780B73 /* ItemsTypeTableViewCell.xib in Resources */,
+				43ED28CE1E9D5EA300780B73 /* ItemsPriceTableViewCell.xib in Resources */,
+				432843FC1E9EA4DD00DBBB95 /* ItemPhotoTableViewCell.xib in Resources */,
+				437E08551EA7CAD600134F2F /* ProfileHeaderTableViewCell.xib in Resources */,
+				432843F81E9EA34600DBBB95 /* ItemsDateTableViewCell.xib in Resources */,
+				437E085E1EA7D7B400134F2F /* ProfileWallPictureCollection.xib in Resources */,
 				43E3515B1E9D3F8500CABBCD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +527,179 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2448BDEAAC0357D394B012F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FashionWardrobeTests/Pods-FashionWardrobeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39687D4566F265B0B6FB8F20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FashionWardrobeTests/Pods-FashionWardrobeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C3D3900EC9EA6D19595F829 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FashionWardrobeUITests/Pods-FashionWardrobeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92FE95E6EDA26386D83CF826 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FashionWardrobe/Pods-FashionWardrobe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4F3DBF3D78C93A820560E6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3FB5C01BBC08547ECCA0FE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FashionWardrobe/Pods-FashionWardrobe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C574C9CE3B5394256DE04E46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FashionWardrobeUITests/Pods-FashionWardrobeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9132ED4070F2405DD944B59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD75D6F753B95F375AC5FA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		43E3514E1E9D3F8500CABBCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43E351581E9D3F8500CABBCD /* ViewController.swift in Sources */,
+				432843FB1E9EA4DD00DBBB95 /* ItemPhotoTableViewCell.swift in Sources */,
+				4328441A1EA52E0700DBBB95 /* DependencyInjector.swift in Sources */,
+				432844161EA52D6D00DBBB95 /* Presenter.swift in Sources */,
+				43ED28B61E9D467500780B73 /* ItemsType.swift in Sources */,
+				43ED28AE1E9D444B00780B73 /* ItemsListHeader.swift in Sources */,
+				43ED28B01E9D447800780B73 /* ItemsListText.swift in Sources */,
+				43ED28B81E9D46C800780B73 /* ItemsPicture.swift in Sources */,
+				4328441D1EA52E7000DBBB95 /* ItemsListPresenter.swift in Sources */,
+				437E08401EA67B0A00134F2F /* ProfileItemsPictures.swift in Sources */,
+				4328441F1EA5452D00DBBB95 /* ProfileHeader.swift in Sources */,
+				43E351581E9D3F8500CABBCD /* ItemsListViewController.swift in Sources */,
+				43ED28CD1E9D5EA300780B73 /* ItemsPriceTableViewCell.swift in Sources */,
+				437E085D1EA7D7B400134F2F /* ProfileWallPictureCollection.swift in Sources */,
+				43ED28BA1E9D46DA00780B73 /* ItemsPictures.swift in Sources */,
+				43ED28C51E9D5A7B00780B73 /* ItemsTypeTableViewCell.swift in Sources */,
+				437E08501EA7CA6C00134F2F /* ProfileViewController.swift in Sources */,
+				43ED28BD1E9D4E2200780B73 /* ListHeaderTableViewCell.swift in Sources */,
+				432844041EA0036A00DBBB95 /* Item.swift in Sources */,
+				437E08421EA67BB800134F2F /* ItemsListType.swift in Sources */,
+				432844181EA52DAD00DBBB95 /* View.swift in Sources */,
 				43E351561E9D3F8500CABBCD /* AppDelegate.swift in Sources */,
+				432843F71E9EA34600DBBB95 /* ItemsDateTableViewCell.swift in Sources */,
+				43ED28B41E9D465000780B73 /* ItemsDate.swift in Sources */,
+				432844021E9FE75900DBBB95 /* ItemsStorage.swift in Sources */,
+				432843FF1E9EB38200DBBB95 /* ItemsPhotoCollectionTableViewCell.swift in Sources */,
+				437E08541EA7CAD600134F2F /* ProfileHeaderTableViewCell.swift in Sources */,
+				437E08591EA7D15A00134F2F /* ProfileWallPicture.swift in Sources */,
+				43ED28B21E9D463100780B73 /* ItemsPrice.swift in Sources */,
+				43ED28C11E9D573500780B73 /* ItemsTextTableViewCell.swift in Sources */,
+				437E083E1EA67AC200134F2F /* ProfileItemPicture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,9 +847,12 @@
 		};
 		43E3517B1E9D3F8500CABBCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E984B5BE4928F4C123C6FE6 /* Pods-FashionWardrobe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59CT5SJ7RL;
 				INFOPLIST_FILE = FashionWardrobe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "OMG-group.FashionWardrobe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,9 +862,12 @@
 		};
 		43E3517C1E9D3F8500CABBCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB27A33D15ECB4719E22351 /* Pods-FashionWardrobe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59CT5SJ7RL;
 				INFOPLIST_FILE = FashionWardrobe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "OMG-group.FashionWardrobe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,6 +877,7 @@
 		};
 		43E3517E1E9D3F8500CABBCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA6430F3444F4425AC5B7D7F /* Pods-FashionWardrobeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,6 +892,7 @@
 		};
 		43E3517F1E9D3F8500CABBCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C743D2A3D46B2417CF4F93FA /* Pods-FashionWardrobeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +907,7 @@
 		};
 		43E351811E9D3F8500CABBCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8565EE040F1DA2E8D44BCA /* Pods-FashionWardrobeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FashionWardrobeUITests/Info.plist;
@@ -473,6 +921,7 @@
 		};
 		43E351821E9D3F8500CABBCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D65CE86CF802DBBCDFEAA3AF /* Pods-FashionWardrobeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FashionWardrobeUITests/Info.plist;
@@ -503,6 +952,7 @@
 				43E3517C1E9D3F8500CABBCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43E3517D1E9D3F8500CABBCD /* Build configuration list for PBXNativeTarget "FashionWardrobeTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +961,7 @@
 				43E3517F1E9D3F8500CABBCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43E351801E9D3F8500CABBCD /* Build configuration list for PBXNativeTarget "FashionWardrobeUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +970,7 @@
 				43E351821E9D3F8500CABBCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
