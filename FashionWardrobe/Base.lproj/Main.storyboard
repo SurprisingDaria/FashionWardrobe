@@ -5,18 +5,21 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="4Tz-zd-oOq">
             <objects>
                 <navigationController id="doj-CO-1YD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ccj-mn-C85"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w6E-W4-3om">
+                    <tabBarItem key="tabBarItem" title="" selectedImage="itemsListPressed" id="Ccj-mn-C85"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="w6E-W4-3om">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.5403268282" green="0.095815284710000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.38431372549999998" green="0.96862745100000003" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textShadowColor" red="0.5403268282" green="0.095815284710000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
@@ -90,23 +93,202 @@
                                     <outlet property="delegate" destination="IOc-CR-hmz" id="dCb-l9-ZdK"/>
                                 </connections>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywH-VN-ucH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="authLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5eD-GS-13R">
+                                        <rect key="frame" x="56" y="0.0" width="263" height="96"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSX-iU-PSb">
+                                        <rect key="frame" x="20" y="434" width="335" height="35"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                        <state key="normal" title="Войти">
+                                            <color key="titleColor" red="0.89803921568627454" green="0.19607843137254902" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="25K-eH-AEu" kind="show" id="ejc-2h-gZq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykq-vb-zi7">
+                                        <rect key="frame" x="20" y="489" width="335" height="35"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                        <state key="normal" title="Зарегистрироваться">
+                                            <color key="titleColor" red="0.20392156862745098" green="0.52156862745098043" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="aOq-PW-S0b" kind="show" id="RWg-De-Aop"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ykq-vb-zi7" firstAttribute="top" secondItem="tSX-iU-PSb" secondAttribute="bottom" constant="20" id="3Hx-I6-bgL"/>
+                                    <constraint firstItem="5eD-GS-13R" firstAttribute="centerX" secondItem="ywH-VN-ucH" secondAttribute="centerX" id="HXD-PV-sLF"/>
+                                    <constraint firstAttribute="bottom" secondItem="ykq-vb-zi7" secondAttribute="bottom" constant="30" id="UDK-fv-K0l"/>
+                                    <constraint firstAttribute="trailing" secondItem="ykq-vb-zi7" secondAttribute="trailing" constant="20" id="Voo-UA-YxD"/>
+                                    <constraint firstItem="tSX-iU-PSb" firstAttribute="leading" secondItem="ywH-VN-ucH" secondAttribute="leading" constant="20" id="h2Q-76-OJ6"/>
+                                    <constraint firstAttribute="trailing" secondItem="tSX-iU-PSb" secondAttribute="trailing" constant="20" id="j1L-UX-Tzi"/>
+                                    <constraint firstItem="ykq-vb-zi7" firstAttribute="leading" secondItem="ywH-VN-ucH" secondAttribute="leading" constant="20" id="kAe-NI-T3Y"/>
+                                    <constraint firstItem="5eD-GS-13R" firstAttribute="top" secondItem="ywH-VN-ucH" secondAttribute="top" id="veO-fc-j2A"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Dpi-jl-SmA" firstAttribute="top" secondItem="mrx-vy-Y8q" secondAttribute="top" id="192-2z-4Ah"/>
+                            <constraint firstItem="ywH-VN-ucH" firstAttribute="leading" secondItem="mrx-vy-Y8q" secondAttribute="leading" id="4nq-qC-Kpw"/>
                             <constraint firstItem="Xfm-XR-PPK" firstAttribute="top" secondItem="Dpi-jl-SmA" secondAttribute="bottom" id="BA4-TV-KfR"/>
+                            <constraint firstAttribute="trailing" secondItem="ywH-VN-ucH" secondAttribute="trailing" id="REl-Zm-V6g"/>
                             <constraint firstAttribute="trailing" secondItem="Dpi-jl-SmA" secondAttribute="trailing" id="YLH-tu-apO"/>
                             <constraint firstItem="Dpi-jl-SmA" firstAttribute="leading" secondItem="mrx-vy-Y8q" secondAttribute="leading" id="k2Q-0Y-GR4"/>
+                            <constraint firstItem="ywH-VN-ucH" firstAttribute="top" secondItem="MXa-UT-Aiu" secondAttribute="bottom" id="pr1-Hp-8Xh"/>
+                            <constraint firstItem="Xfm-XR-PPK" firstAttribute="top" secondItem="ywH-VN-ucH" secondAttribute="bottom" id="wkI-3F-RV6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OUa-At-J2t"/>
                     <connections>
+                        <outlet property="registrationView" destination="ywH-VN-ucH" id="Dg7-zM-U3I"/>
                         <outlet property="tableView" destination="Dpi-jl-SmA" id="Dmu-dL-WSq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5J-nn-eKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="941.60000000000002" y="-284.70764617691157"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="byP-pp-iR1">
+            <objects>
+                <viewController id="25K-eH-AEu" customClass="LoginViewController" customModule="FashionWardrobe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6V0-PV-T4k"/>
+                        <viewControllerLayoutGuide type="bottom" id="XTa-bo-AHb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hDB-Ms-YrW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="authLogo" translatesAutoresizingMaskIntoConstraints="NO" id="soO-y1-NET">
+                                <rect key="frame" x="55.5" y="64" width="263" height="96"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите e-mail  и пароль" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SR-QC-2YE">
+                                <rect key="frame" x="16" y="171" width="343" height="25"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="19"/>
+                                <color key="textColor" red="0.25882352941176473" green="0.25882352941176473" blue="0.25882352941176473" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHR-Xz-Fkg">
+                                <rect key="frame" x="0.0" y="246" width="375" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Введите e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DNZ-hA-a8G">
+                                        <rect key="frame" x="68" y="0.0" width="299" height="60"/>
+                                        <color key="textColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKq-cd-GxV">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.20392156862745098" green="0.52156862745098043" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="yKq-cd-GxV" secondAttribute="height" multiplier="60:60" id="bhp-fu-esl"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="yKq-cd-GxV" firstAttribute="leading" secondItem="EHR-Xz-Fkg" secondAttribute="leading" id="1cZ-qc-eah"/>
+                                    <constraint firstAttribute="bottom" secondItem="DNZ-hA-a8G" secondAttribute="bottom" id="6VO-ml-gdK"/>
+                                    <constraint firstAttribute="height" constant="60" id="7fk-bs-0H7"/>
+                                    <constraint firstItem="DNZ-hA-a8G" firstAttribute="leading" secondItem="yKq-cd-GxV" secondAttribute="trailing" constant="8" id="aHu-ze-vRw"/>
+                                    <constraint firstItem="yKq-cd-GxV" firstAttribute="top" secondItem="EHR-Xz-Fkg" secondAttribute="top" id="dfm-1f-RMI"/>
+                                    <constraint firstItem="DNZ-hA-a8G" firstAttribute="top" secondItem="EHR-Xz-Fkg" secondAttribute="top" id="gOF-EP-HCa"/>
+                                    <constraint firstAttribute="bottom" secondItem="yKq-cd-GxV" secondAttribute="bottom" id="uIW-1b-AHi"/>
+                                    <constraint firstAttribute="trailing" secondItem="DNZ-hA-a8G" secondAttribute="trailing" constant="8" id="y6Q-8a-zjS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNf-R2-lYZ">
+                                <rect key="frame" x="0.0" y="336" width="375" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ceX-8b-A7P">
+                                        <rect key="frame" x="68" y="0.0" width="299" height="60"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YS-VZ-xuj">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.67843137254901964" green="0.14901960784313725" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2YS-VZ-xuj" secondAttribute="height" multiplier="71:71" id="hB1-1S-xem"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ceX-8b-A7P" firstAttribute="leading" secondItem="2YS-VZ-xuj" secondAttribute="trailing" constant="8" id="1zG-Qd-uxM"/>
+                                    <constraint firstAttribute="height" constant="60" id="2Hf-vu-YV0"/>
+                                    <constraint firstAttribute="bottom" secondItem="ceX-8b-A7P" secondAttribute="bottom" id="IxD-ot-34D"/>
+                                    <constraint firstAttribute="bottom" secondItem="2YS-VZ-xuj" secondAttribute="bottom" id="Jwv-1z-BBU"/>
+                                    <constraint firstItem="ceX-8b-A7P" firstAttribute="top" secondItem="PNf-R2-lYZ" secondAttribute="top" id="YlZ-CB-XE2"/>
+                                    <constraint firstAttribute="trailing" secondItem="ceX-8b-A7P" secondAttribute="trailing" constant="8" id="nky-Xj-sfs"/>
+                                    <constraint firstItem="2YS-VZ-xuj" firstAttribute="top" secondItem="PNf-R2-lYZ" secondAttribute="top" id="oNF-Ju-LLw"/>
+                                    <constraint firstItem="2YS-VZ-xuj" firstAttribute="leading" secondItem="PNf-R2-lYZ" secondAttribute="leading" id="syi-qS-Yhm"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ox-Ms-EKH">
+                                <rect key="frame" x="16" y="565" width="343" height="45"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                <state key="normal" title="Вход">
+                                    <color key="titleColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButton:" destination="25K-eH-AEu" eventType="touchUpInside" id="an6-YP-bsh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4SR-QC-2YE" secondAttribute="trailing" id="4ac-Kg-AKm"/>
+                            <constraint firstItem="4SR-QC-2YE" firstAttribute="leading" secondItem="hDB-Ms-YrW" secondAttribute="leadingMargin" id="5iq-K6-D4J"/>
+                            <constraint firstAttribute="trailing" secondItem="EHR-Xz-Fkg" secondAttribute="trailing" id="9Ch-ia-0zL"/>
+                            <constraint firstItem="XTa-bo-AHb" firstAttribute="top" secondItem="3ox-Ms-EKH" secondAttribute="bottom" constant="8" id="ASb-YB-LIj"/>
+                            <constraint firstItem="EHR-Xz-Fkg" firstAttribute="leading" secondItem="hDB-Ms-YrW" secondAttribute="leading" id="Hh6-3t-xia"/>
+                            <constraint firstAttribute="trailing" secondItem="PNf-R2-lYZ" secondAttribute="trailing" id="Ilo-95-F6D"/>
+                            <constraint firstItem="PNf-R2-lYZ" firstAttribute="leading" secondItem="hDB-Ms-YrW" secondAttribute="leading" id="dZL-eY-HUb"/>
+                            <constraint firstItem="4SR-QC-2YE" firstAttribute="centerY" secondItem="hDB-Ms-YrW" secondAttribute="centerY" multiplier="0.55" id="hga-iC-n0E"/>
+                            <constraint firstItem="PNf-R2-lYZ" firstAttribute="top" secondItem="EHR-Xz-Fkg" secondAttribute="bottom" constant="30" id="rig-WR-xFs"/>
+                            <constraint firstItem="3ox-Ms-EKH" firstAttribute="leading" secondItem="hDB-Ms-YrW" secondAttribute="leadingMargin" id="u4d-af-pMZ"/>
+                            <constraint firstItem="soO-y1-NET" firstAttribute="top" secondItem="6V0-PV-T4k" secondAttribute="bottom" id="upB-5J-UFC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3ox-Ms-EKH" secondAttribute="trailing" id="uvz-7K-uEb"/>
+                            <constraint firstItem="soO-y1-NET" firstAttribute="centerX" secondItem="hDB-Ms-YrW" secondAttribute="centerX" id="xZI-mD-D5V"/>
+                            <constraint firstItem="EHR-Xz-Fkg" firstAttribute="top" secondItem="4SR-QC-2YE" secondAttribute="bottom" constant="50" id="zzY-tM-Sf6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="DNZ-hA-a8G" id="sxL-nA-fFL"/>
+                        <outlet property="passwordField" destination="ceX-8b-A7P" id="SIa-Pt-Byk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBY-ri-mcs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="-521.28935532233891"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="60q-cQ-AfW">
+            <objects>
+                <viewController id="aOq-PW-S0b" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n9C-uK-nno"/>
+                        <viewControllerLayoutGuide type="bottom" id="owN-vg-VJj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RLA-o9-PIC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sh3-Lj-r0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="221"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kjV-dh-zUJ">
@@ -127,15 +309,15 @@
             </objects>
             <point key="canvasLocation" x="-906" y="-536"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="0um-Wd-yjx">
             <objects>
                 <navigationController id="AMm-hU-FpB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="0UW-8D-sSR"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tJM-hi-I5N">
+                    <tabBarItem key="tabBarItem" title="" selectedImage="newsListNotPressed" id="0UW-8D-sSR"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tJM-hi-I5N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.5403268282" green="0.095815284710000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.3843137254901961" green="0.96862745098039216" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textShadowColor" red="0.5403268282" green="0.095815284710000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
@@ -145,17 +327,17 @@
             </objects>
             <point key="canvasLocation" x="-79" y="-1014"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="V9H-BO-pYK">
             <objects>
                 <navigationController id="wwi-vY-TcG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="VdP-We-U6H"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HF6-YU-Agp">
+                    <tabBarItem key="tabBarItem" title="" selectedImage="person-outline" id="VdP-We-U6H"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="HF6-YU-Agp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.5403268282" green="0.095815284710000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.3843137254901961" green="0.96862745098039216" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textShadowColor" red="0.5403268282" green="0.095815284710000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="0.3843137254901961" green="0.96862745098039216" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -167,4 +349,10 @@
             <point key="canvasLocation" x="-79" y="-283"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="authLogo" width="263" height="96"/>
+        <image name="itemsListPressed" width="20" height="17"/>
+        <image name="newsListNotPressed" width="18" height="12"/>
+        <image name="person-outline" width="32" height="32"/>
+    </resources>
 </document>

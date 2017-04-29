@@ -96,7 +96,7 @@ class ItemsStorage
         let avatarURL = urlAvatarPhotos[id]
         
         let item = Item(id : id)
-        let profile = ProfileHeader(city: city, authorID: "\(id)", avatarURL: avatarURL, name: name)
+        let profile = ProfileHeader(city: city,token: "", email: "", authorID: "\(id)", avatarURL: avatarURL, name: name)
         item.contentArray.add(profile)
         
         outArray.add(item)

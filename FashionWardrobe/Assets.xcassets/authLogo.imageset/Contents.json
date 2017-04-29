@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "profileNotPressed.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "authLogo.png",
       "scale" : "2x"
     },
     {

@@ -12,6 +12,9 @@ class ProfileViewController : UIViewController
 {
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var registrationView: UIView!
+    
+    
     let kProfileHeaderNIB = UINib(nibName: "ProfileHeaderTableViewCell", bundle: nil)
     let kProfileHeaderReuseIdentifier = "profileHeader"
     
@@ -20,6 +23,21 @@ class ProfileViewController : UIViewController
         super.viewDidLoad()
         
         tableView.register(kProfileHeaderNIB, forCellReuseIdentifier: kProfileHeaderReuseIdentifier)
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    
+    {
+        super.viewWillAppear(animated)
+        
+        if UserStorage.profile == nil
+        {
+            registrationView.isHidden = false
+        }
+        else
+        {
+            registrationView.isHidden = true
+        }
     }
 }
 
