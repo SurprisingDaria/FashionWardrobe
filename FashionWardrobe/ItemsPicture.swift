@@ -19,8 +19,5 @@ class ItemsPicture
     {
         self.id = id
         self.photoURL = photoURL
-        
     }
-    
-    
 }

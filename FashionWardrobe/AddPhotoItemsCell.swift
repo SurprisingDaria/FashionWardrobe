@@ -1,16 +1,14 @@
 //
-//  ItemsPhotoCollectionTableViewCell.swift
+//  AddPhotoItemsCell.swift
 //  FashionWardrobe
 //
-//  Created by Daria Smirnova on 12/04/17.
+//  Created by Daria Smirnova on 03/05/17.
 //  Copyright © 2017 Daria Smirnova. All rights reserved.
 //
 
 import UIKit
 
-class ItemsPhotoCollectionTableViewCell: UITableViewCell
-
-{
+class AddPhotoItemsCell: UITableViewCell {
 
     
     @IBOutlet weak var photoCollectionView: UICollectionView!
@@ -39,8 +37,8 @@ class ItemsPhotoCollectionTableViewCell: UITableViewCell
     
 }
 
-extension ItemsPhotoCollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
-
+extension AddPhotoItemsCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
+    
 {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int
@@ -49,13 +47,13 @@ extension ItemsPhotoCollectionTableViewCell: UICollectionViewDelegate, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
-    
+        
     {
         return photoArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    
+        
     {
         let cell = photoCollectionView.dequeueReusableCell(withReuseIdentifier: "itemPhotoReuseIdentifier", for: indexPath) as? ItemPhotoTableViewCell
         cell?.configureSelf(photoArray[indexPath.row].photoURL)
@@ -83,7 +81,7 @@ extension ItemsPhotoCollectionTableViewCell: UICollectionViewDelegate, UICollect
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
-        let width = collectionView.frame.size.width 
+        let width = collectionView.frame.size.width
         return CGSize(width: width, height: width)
     }
     

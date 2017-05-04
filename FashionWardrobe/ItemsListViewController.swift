@@ -18,6 +18,8 @@ class ItemsListViewController: UIViewController
     
     var presenter: Presenter?
     
+    let picker = UIImagePickerController()
+    
     
     
     let kListHeaderNIB = UINib(nibName: "ListHeaderTableViewCell", bundle: nil)
@@ -58,6 +60,8 @@ class ItemsListViewController: UIViewController
         itemsListTableView.register(kItemsDateNIB, forCellReuseIdentifier: kItemsDateReuseIdentifier)
         itemsListTableView.register(kPhotoCollectionNIB, forCellReuseIdentifier: kPhotoCollectionReuseIdentifier)
         itemsListTableView.register(kItemsTypeNIB, forCellReuseIdentifier: kItemsTypeReuseIdentifier)
+        
+        picker.delegate = self
         
   
     
@@ -125,6 +129,95 @@ extension ItemsListViewController: View
     }
    
     
+}
+
+extension ItemsListViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    //MARK: - Delegates
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage //2
+
+        dismiss(animated:true, completion: nil) //5
+        
+        self.performSegue(withIdentifier: "showAddPost", sender: nil)
+    }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        
+    }
+}
+
+extension ItemsListViewController {
+    @IBAction func addPost(sender: AnyObject) {
+        // 1
+        let optionMenu = UIAlertController(title: nil, message: "", preferredStyle: .actionSheet)
+        
+        // 2
+        let cameraAction = UIAlertAction(title: "Сделать фото", style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                self.picker.allowsEditing = false
+                self.picker.sourceType = UIImagePickerControllerSourceType.camera
+                self.picker.cameraCaptureMode = .photo
+                self.picker.modalPresentationStyle = .fullScreen
+                self.present(self.picker,animated: true,completion: nil)
+            }
+            else {
+                let alertVC = UIAlertController(
+                    title: "No Camera",
+                    message: "Sorry, this device has no camera",
+                    preferredStyle: .alert)
+                let okAction = UIAlertAction(
+                    title: "OK",
+                    style:.default,
+                    handler: nil)
+                alertVC.addAction(okAction)
+                self.present(
+                    alertVC,
+                    animated: true,
+                    completion: nil)
+            }
+            
+        })
+        let photoLibraryAction = UIAlertAction(title: "Выбрать из галереи", style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+                self.picker.allowsEditing = false
+                self.picker.sourceType = .photoLibrary
+                self.picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+                self.present(self.picker, animated: true, completion: nil)
+            }
+            else {
+                let alertVC = UIAlertController(
+                    title: "No photoLibrary",
+                    message: "Sorry, this device has no photoLibrary",
+                    preferredStyle: .alert)
+                let okAction = UIAlertAction(
+                    title: "OK",
+                    style:.default,
+                    handler: nil)
+                alertVC.addAction(okAction)
+                self.present(
+                    alertVC,
+                    animated: true,
+                    completion: nil)
+            }
+        })
+        
+        //
+        let cancelAction = UIAlertAction(title: "Отмена", style: .cancel, handler: {
+            (alert: UIAlertAction!) -> Void in
+        })
+        
+        
+        // 4
+        optionMenu.addAction(cameraAction)
+        optionMenu.addAction(photoLibraryAction)
+        optionMenu.addAction(cancelAction)
+        
+        // 5
+        self.present(optionMenu, animated: true, completion: nil)
+    }
 }
 
 
