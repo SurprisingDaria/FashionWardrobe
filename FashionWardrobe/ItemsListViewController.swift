@@ -78,6 +78,16 @@ class ItemsListViewController: UIViewController
         super.viewWillAppear(animated)
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showAddPost" {
+            if let chosenImage = sender as? UIImage, let vc = segue.destination as? AddPostViewController {
+                let itemPicture = ItemsPicture(id: "", photoURL: "")
+                itemPicture.image = chosenImage
+                vc.itemsPicture = [itemPicture]
+            }
+        }
+    }
 }
 
 extension ItemsListViewController: View
@@ -140,10 +150,10 @@ extension ItemsListViewController : UIImagePickerControllerDelegate, UINavigatio
 
         dismiss(animated:true, completion: nil) //5
         
-        self.performSegue(withIdentifier: "showAddPost", sender: nil)
+        self.performSegue(withIdentifier: "showAddPost", sender: chosenImage)
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        
+        dismiss(animated: true, completion: nil)
     }
 }
 

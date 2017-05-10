@@ -80,7 +80,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="kUF-gP-RD7" id="jr2-qd-fLB"/>
                         <outlet property="itemsListTableView" destination="lds-op-EKQ" id="Ggo-dj-EMJ"/>
-                        <segue destination="S73-qG-dGU" kind="presentation" identifier="showAddPost" id="qfM-Bd-kkz"/>
+                        <segue destination="S73-qG-dGU" kind="show" identifier="showAddPost" id="qfM-Bd-kkz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oyC-L0-F4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -145,7 +145,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z34-OS-5gN">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="558"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="S73-qG-dGU" id="qkW-1A-V0B"/>
@@ -153,7 +153,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCy-1s-VuI">
-                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="558" width="375" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.37558227379999998" blue="0.48423790189999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="n5I-rR-tNQ"/>

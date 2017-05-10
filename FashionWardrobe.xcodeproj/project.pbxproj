@@ -45,6 +45,12 @@
 		4389779B1EB3BD7F002FB89A /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4389779A1EB3BD7F002FB89A /* ProfileManager.swift */; };
 		4389779D1EB3C4EF002FB89A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4389779C1EB3C4EF002FB89A /* LoginViewController.swift */; };
 		438977F11EB8F552002FB89A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438977F01EB8F552002FB89A /* NewsViewController.swift */; };
+		43AEB5B31EC05AA600A516BF /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AEB5B21EC05AA600A516BF /* DescriptionTableViewCell.swift */; };
+		43AEB5B51EC05AB900A516BF /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AEB5B41EC05AB900A516BF /* DescriptionTableViewCell.xib */; };
+		43AEB5B81EC231DE00A516BF /* TypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AEB5B61EC231DE00A516BF /* TypeTableViewCell.swift */; };
+		43AEB5B91EC231DE00A516BF /* TypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AEB5B71EC231DE00A516BF /* TypeTableViewCell.xib */; };
+		43AEB5BC1EC23A7D00A516BF /* PriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AEB5BA1EC23A7D00A516BF /* PriceTableViewCell.swift */; };
+		43AEB5BD1EC23A7D00A516BF /* PriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AEB5BB1EC23A7D00A516BF /* PriceTableViewCell.xib */; };
 		43E351561E9D3F8500CABBCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E351551E9D3F8500CABBCD /* AppDelegate.swift */; };
 		43E351581E9D3F8500CABBCD /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E351571E9D3F8500CABBCD /* ItemsListViewController.swift */; };
 		43E3515B1E9D3F8500CABBCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E351591E9D3F8500CABBCD /* Main.storyboard */; };
@@ -139,6 +145,12 @@
 		4389779A1EB3BD7F002FB89A /* ProfileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
 		4389779C1EB3C4EF002FB89A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		438977F01EB8F552002FB89A /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		43AEB5B21EC05AA600A516BF /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		43AEB5B41EC05AB900A516BF /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		43AEB5B61EC231DE00A516BF /* TypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeTableViewCell.swift; sourceTree = "<group>"; };
+		43AEB5B71EC231DE00A516BF /* TypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeTableViewCell.xib; sourceTree = "<group>"; };
+		43AEB5BA1EC23A7D00A516BF /* PriceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceTableViewCell.swift; sourceTree = "<group>"; };
+		43AEB5BB1EC23A7D00A516BF /* PriceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceTableViewCell.xib; sourceTree = "<group>"; };
 		43E351521E9D3F8500CABBCD /* FashionWardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionWardrobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E351551E9D3F8500CABBCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43E351571E9D3F8500CABBCD /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
@@ -364,6 +376,12 @@
 				43E56B271EBA5D3700013335 /* AddPhotoItemsCell.xib */,
 				43E56B2A1EBA5DBC00013335 /* AddPhotoItemCell.swift */,
 				43E56B2B1EBA5DBC00013335 /* AddPhotoItemCell.xib */,
+				43AEB5B21EC05AA600A516BF /* DescriptionTableViewCell.swift */,
+				43AEB5B41EC05AB900A516BF /* DescriptionTableViewCell.xib */,
+				43AEB5B61EC231DE00A516BF /* TypeTableViewCell.swift */,
+				43AEB5B71EC231DE00A516BF /* TypeTableViewCell.xib */,
+				43AEB5BA1EC23A7D00A516BF /* PriceTableViewCell.swift */,
+				43AEB5BB1EC23A7D00A516BF /* PriceTableViewCell.xib */,
 			);
 			name = AddPost;
 			sourceTree = "<group>";
@@ -597,6 +615,7 @@
 				43ED28BE1E9D4E2200780B73 /* ListHeaderTableViewCell.xib in Resources */,
 				43ED28CA1E9D5BC900780B73 /* ItemsTextTableViewCell.xib in Resources */,
 				43E351601E9D3F8500CABBCD /* LaunchScreen.storyboard in Resources */,
+				43AEB5BD1EC23A7D00A516BF /* PriceTableViewCell.xib in Resources */,
 				432844001E9EB38200DBBB95 /* ItemsPhotoCollectionTableViewCell.xib in Resources */,
 				437E085A1EA7D15A00134F2F /* ProfileWallPicture.xib in Resources */,
 				43E3515D1E9D3F8500CABBCD /* Assets.xcassets in Resources */,
@@ -607,7 +626,9 @@
 				437E08551EA7CAD600134F2F /* ProfileHeaderTableViewCell.xib in Resources */,
 				432843F81E9EA34600DBBB95 /* ItemsDateTableViewCell.xib in Resources */,
 				43E56B2D1EBA5DBC00013335 /* AddPhotoItemCell.xib in Resources */,
+				43AEB5B51EC05AB900A516BF /* DescriptionTableViewCell.xib in Resources */,
 				43E56B291EBA5D3700013335 /* AddPhotoItemsCell.xib in Resources */,
+				43AEB5B91EC231DE00A516BF /* TypeTableViewCell.xib in Resources */,
 				437E085E1EA7D7B400134F2F /* ProfileWallPictureCollection.xib in Resources */,
 				43E3515B1E9D3F8500CABBCD /* Main.storyboard in Resources */,
 				43E56B1E1EB8FEB900013335 /* NewsOnePictureTableViewCell.xib in Resources */,
@@ -781,6 +802,7 @@
 				43E56B241EBA552900013335 /* AddPostViewController.swift in Sources */,
 				4328441A1EA52E0700DBBB95 /* DependencyInjector.swift in Sources */,
 				432844161EA52D6D00DBBB95 /* Presenter.swift in Sources */,
+				43AEB5B81EC231DE00A516BF /* TypeTableViewCell.swift in Sources */,
 				43ED28B61E9D467500780B73 /* ItemsType.swift in Sources */,
 				43E56B211EB8FED000013335 /* NewsPhotoCollectionTableViewCell.swift in Sources */,
 				43ED28AE1E9D444B00780B73 /* ItemsListHeader.swift in Sources */,
@@ -793,6 +815,7 @@
 				43E56B1D1EB8FEB900013335 /* NewsOnePictureTableViewCell.swift in Sources */,
 				436B23B51EAFB63F00849417 /* News.swift in Sources */,
 				436B23B71EAFB76E00849417 /* NewsText.swift in Sources */,
+				43AEB5B31EC05AA600A516BF /* DescriptionTableViewCell.swift in Sources */,
 				43E56B121EB8F99300013335 /* NewsPresenter.swift in Sources */,
 				438977931EB2667F002FB89A /* OperationsManager.swift in Sources */,
 				438977971EB3B34B002FB89A /* UserStorage.swift in Sources */,
@@ -819,6 +842,7 @@
 				437E08541EA7CAD600134F2F /* ProfileHeaderTableViewCell.swift in Sources */,
 				438977991EB3B666002FB89A /* LoginOperation.swift in Sources */,
 				4389778C1EB25B05002FB89A /* API_WRAPPER.swift in Sources */,
+				43AEB5BC1EC23A7D00A516BF /* PriceTableViewCell.swift in Sources */,
 				437E08591EA7D15A00134F2F /* ProfileWallPicture.swift in Sources */,
 				43ED28B21E9D463100780B73 /* ItemsPrice.swift in Sources */,
 				438977911EB25CBC002FB89A /* NewsOperation.swift in Sources */,

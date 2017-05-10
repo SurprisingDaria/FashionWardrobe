@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ItemsPicture
 
@@ -14,6 +15,7 @@ class ItemsPicture
 
     var id: String
     var photoURL: String
+    var image : UIImage?
     
     init (id: String, photoURL: String)
     {

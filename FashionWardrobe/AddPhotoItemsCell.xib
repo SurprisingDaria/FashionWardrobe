@@ -1,19 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AddPhotoItemsCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddPhotoItemsCell" rowHeight="174" id="KGk-i7-Jjw" customClass="AddPhotoItemsCell" customModule="FashionWardrobe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="43"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qfG-OP-7rg">
+                        <rect key="frame" x="0.0" y="10" width="320" height="150"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="T5t-6d-8Hv"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LgB-75-GhJ">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eD0-mi-STS">
+                        <rect key="frame" x="0.0" y="177.5" width="320" height="2"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="0Ua-nS-V5t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eD0-mi-STS" firstAttribute="top" secondItem="qfG-OP-7rg" secondAttribute="bottom" constant="10" id="2Qm-Mb-FkP"/>
+                    <constraint firstItem="qfG-OP-7rg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="61S-mw-ae7"/>
+                    <constraint firstAttribute="bottom" secondItem="eD0-mi-STS" secondAttribute="bottom" id="CFK-kb-FKu"/>
+                    <constraint firstAttribute="trailing" secondItem="eD0-mi-STS" secondAttribute="trailing" id="KDs-rj-rgk"/>
+                    <constraint firstAttribute="trailing" secondItem="qfG-OP-7rg" secondAttribute="trailing" id="gcB-73-mlq"/>
+                    <constraint firstItem="qfG-OP-7rg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="mYd-4t-XdG"/>
+                    <constraint firstItem="eD0-mi-STS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="twf-bM-cAJ"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="heightCollectionViewConstraint" destination="T5t-6d-8Hv" id="oFj-7t-JB9"/>
+                <outlet property="photoCollectionView" destination="qfG-OP-7rg" id="PvX-4d-9yI"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="64.5"/>
         </tableViewCell>
     </objects>
 </document>
