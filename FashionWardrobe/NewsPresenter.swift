@@ -8,7 +8,7 @@
 
 import Foundation
 
-class NewsPresenter
+class NewsPresenter : Presenter
     
 {
     var dataSource = NSMutableArray()

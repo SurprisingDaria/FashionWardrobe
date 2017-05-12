@@ -18,7 +18,7 @@ class API_WRAPPER
     
     class func getNews (success: @escaping (JSON)-> Void, failure: @escaping (Int)->Void)-> URLSessionDataTask
     {
-        let urlString = "https://api.vk.com/method/newsfeed.get?owner_id=-50765346&filter=owner&count=50&v=5.62"
+        let urlString = "https://api.vk.com/method/wall.get?owner_id=-50765346&extended=1&filter=owner&count=50&v=5.62&access_token=\(VKAuthManager.sharedInstance.getAccessToken()!)"
         let url = URL (string: urlString)!
         let request = URLRequest (url: url)
         

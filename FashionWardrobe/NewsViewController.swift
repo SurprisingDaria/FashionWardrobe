@@ -30,6 +30,9 @@ class NewsViewController: UIViewController
     {
         super.viewDidLoad()
         
+        newsTableView.rowHeight = UITableViewAutomaticDimension
+        newsTableView.estimatedRowHeight = 300
+        
         newsTableView.register(kTextNIB, forCellReuseIdentifier: kTextNibReuseIdentifier)
         
         newsTableView.register(KNewsPhotoCollectionNIB, forCellReuseIdentifier: kNewsPhotoReuseIdentifier)
@@ -40,7 +43,10 @@ class NewsViewController: UIViewController
     {
         if presenter == nil
         {
-            DependencyInjector.obtainPresenter(view: self)
+            VKAuthManager.sharedInstance.authorize(withController: self, success: {
+                    DependencyInjector.obtainPresenter(view: self)
+                        
+            }, failure: {})
         }
         
         super.viewWillAppear(animated)

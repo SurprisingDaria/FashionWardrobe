@@ -51,6 +51,7 @@
 		43AEB5B91EC231DE00A516BF /* TypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AEB5B71EC231DE00A516BF /* TypeTableViewCell.xib */; };
 		43AEB5BC1EC23A7D00A516BF /* PriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AEB5BA1EC23A7D00A516BF /* PriceTableViewCell.swift */; };
 		43AEB5BD1EC23A7D00A516BF /* PriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AEB5BB1EC23A7D00A516BF /* PriceTableViewCell.xib */; };
+		43AEB5BF1EC6530300A516BF /* VKAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AEB5BE1EC6530300A516BF /* VKAuthManager.swift */; };
 		43E351561E9D3F8500CABBCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E351551E9D3F8500CABBCD /* AppDelegate.swift */; };
 		43E351581E9D3F8500CABBCD /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E351571E9D3F8500CABBCD /* ItemsListViewController.swift */; };
 		43E3515B1E9D3F8500CABBCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E351591E9D3F8500CABBCD /* Main.storyboard */; };
@@ -151,6 +152,8 @@
 		43AEB5B71EC231DE00A516BF /* TypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeTableViewCell.xib; sourceTree = "<group>"; };
 		43AEB5BA1EC23A7D00A516BF /* PriceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceTableViewCell.swift; sourceTree = "<group>"; };
 		43AEB5BB1EC23A7D00A516BF /* PriceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceTableViewCell.xib; sourceTree = "<group>"; };
+		43AEB5BE1EC6530300A516BF /* VKAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKAuthManager.swift; sourceTree = "<group>"; };
+		43AEB5C01EC6580900A516BF /* FashionWardrobe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FashionWardrobe.entitlements; sourceTree = "<group>"; };
 		43E351521E9D3F8500CABBCD /* FashionWardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionWardrobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E351551E9D3F8500CABBCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43E351571E9D3F8500CABBCD /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
@@ -341,6 +344,7 @@
 		43E351541E9D3F8500CABBCD /* FashionWardrobe */ = {
 			isa = PBXGroup;
 			children = (
+				43AEB5C01EC6580900A516BF /* FashionWardrobe.entitlements */,
 				438977961EB3B34B002FB89A /* UserStorage.swift */,
 				432844011E9FE75900DBBB95 /* ItemsStorage.swift */,
 				432844141EA52D4F00DBBB95 /* protocols and DI */,
@@ -450,6 +454,7 @@
 				4389778B1EB25B05002FB89A /* API_WRAPPER.swift */,
 				4389778D1EB25C89002FB89A /* NewsManager.swift */,
 				4389779A1EB3BD7F002FB89A /* ProfileManager.swift */,
+				43AEB5BE1EC6530300A516BF /* VKAuthManager.swift */,
 			);
 			name = internet;
 			path = FashionWardrobe;
@@ -574,6 +579,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 59CT5SJ7RL;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					43E351651E9D3F8500CABBCD = {
 						CreatedOnToolsVersion = 8.1;
@@ -837,6 +847,7 @@
 				43E56B281EBA5D3700013335 /* AddPhotoItemsCell.swift in Sources */,
 				43ED28B41E9D465000780B73 /* ItemsDate.swift in Sources */,
 				432844021E9FE75900DBBB95 /* ItemsStorage.swift in Sources */,
+				43AEB5BF1EC6530300A516BF /* VKAuthManager.swift in Sources */,
 				4389778E1EB25C89002FB89A /* NewsManager.swift in Sources */,
 				432843FF1E9EB38200DBBB95 /* ItemsPhotoCollectionTableViewCell.swift in Sources */,
 				437E08541EA7CAD600134F2F /* ProfileHeaderTableViewCell.swift in Sources */,
@@ -998,6 +1009,7 @@
 			baseConfigurationReference = 9E984B5BE4928F4C123C6FE6 /* Pods-FashionWardrobe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FashionWardrobe/FashionWardrobe.entitlements;
 				DEVELOPMENT_TEAM = 59CT5SJ7RL;
 				INFOPLIST_FILE = FashionWardrobe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1013,6 +1025,7 @@
 			baseConfigurationReference = 2FB27A33D15ECB4719E22351 /* Pods-FashionWardrobe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FashionWardrobe/FashionWardrobe.entitlements;
 				DEVELOPMENT_TEAM = 59CT5SJ7RL;
 				INFOPLIST_FILE = FashionWardrobe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

@@ -20,14 +20,16 @@ class DependencyInjector
         
         //проверка типа вью, на основе этого дается соответствующий презентер
         if view is  ItemsListViewController
-            
         {
             presenter  = ItemsListPresenter ()
         }
-        
-               if presenter != nil
+        else if view is NewsViewController
         {
-            
+            presenter = NewsPresenter()
+        }
+        
+        if presenter != nil
+        {
             view.assignPresenter(presenter: presenter!)
             
         }

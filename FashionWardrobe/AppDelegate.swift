@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import VK_ios_sdk
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -40,7 +41,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func application(app: UIApplication, url: NSURL, options: NSDictionary) -> Bool {
+        VKSdk.processOpen((url as NSURL) as URL!, fromApplication: options["UIApplicationOpenURLOptionsSourceApplicationKey"] as! String)
+        return true
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool
+    {
+        return VKAuthManager.sharedInstance.process(url: url, fromApplication: sourceApplication)
+    }
 
 }
 
